@@ -9,8 +9,8 @@ var t = Object.values(document.querySelector('#app > div > div'))[1]
 if (amt) {
   t.picking = false
   t.state.canGather = true
-  var _0x29e468 = { numDefense: amt }
-  t.setState(_0x29e468)
+  var var1 = { numDefense: amt }
+  t.setState(var1)
   t.props.firebase.setVal({
     id: t.props.client.hostId,
     path: 'a/'.concat(t.props.client.name, '/d'),
@@ -21,7 +21,7 @@ if (amt) {
     numDefense: amt,
     fadeOut: true,
   }
-  t.setState(_0x4ee012, function () {
+  t.setState(var2, function () {
     t.nextTimeout = setTimeout(function () {
       t.randomQ()
     }, 450)
